@@ -22,7 +22,7 @@ class Book:
         return f'Книга "{self.name}"'
 
     def __repr__(self):
-        return f'Book(id={self.id}, name={self.name!r}, pages={self.pages})'
+        return f'Book(id_={self.id}, name={self.name!r}, pages={self.pages})'
 
 
 class Library:
