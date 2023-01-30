@@ -13,8 +13,8 @@ BOOKS_DATABASE = [
 
 
 class Book:
-    def __init__(self, id, name, pages):
-        self.id = id
+    def __init__(self, id_, name, pages):
+        self.id = id_
         self.name = name
         self.pages = pages
 
@@ -28,7 +28,7 @@ class Book:
 if __name__ == '__main__':
     # инициализируем список книг
     list_books = [
-        Book(id=book_dict["id"], name=book_dict["name"], pages=book_dict["pages"]) for book_dict in BOOKS_DATABASE
+        Book(id_=book_dict["id"], name=book_dict["name"], pages=book_dict["pages"]) for book_dict in BOOKS_DATABASE
     ]
     for book in list_books:
         print(book)  # проверяем метод __str__
